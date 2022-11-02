@@ -19,8 +19,7 @@ while True:
 
     # Draw rectangle around face
     for (x, y, w, h) in face_location:
-        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 256), 2)
-
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
     # Show image
     cv2.imshow('Clever Face Detector', frame)
     # Wait until image window closed
